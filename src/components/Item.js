@@ -15,7 +15,7 @@ class Item extends Component {
     render() {
       const item = this.props.item
         return (
-            <div className = "">
+            <div className = {this.props.item.completed ? "crossed" : null}>
               <input type="checkbox" name={item.name}/>
               <label for={item.name}>{item.name}</label>
       {/*   your code here
