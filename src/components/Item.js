@@ -13,8 +13,11 @@ class Item extends Component {
         //your code here
       }
     render() {
+      const item = this.props.item
         return (
             <div className = "">
+              <input type="checkbox" name={item.name}/>
+              <label for={item.name}>{item.name}</label>
       {/*   your code here
             each item should be in an input checkbox
             it should display the item name and location
